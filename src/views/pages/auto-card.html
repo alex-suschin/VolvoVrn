@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Авто</title>
+    <meta name="theme-color" content="#c9e0e04d">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="shortcut icon" href="img/favicons/favicon.ico" type="image/x-icon">
+    <link rel="icon" sizes="16x16" href="img/favicons/favicon-16x16.png" type="image/png">
+    <link rel="icon" sizes="32x32" href="img/favicons/favicon-32x32.png" type="image/png">
+    <link rel="apple-touch-icon-precomposed" href="img/favicons/apple-touch-icon-precomposed.png">
+    <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/favicons/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicons/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/favicons/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicons/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/favicons/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/favicons/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/favicons/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="167x167" href="img/favicons/apple-touch-icon-167x167.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon-180x180.png">
+    <link rel="apple-touch-icon" sizes="1024x1024" href="img/favicons/apple-touch-icon-1024x1024.png">
+    <link rel="stylesheet" href="../styles/main.css">
+</head>
+
+<body class="auto-card-page">
+    @@include("../../blocks/modules/header/header.html")
+
+    <div class="auto-card-wrap">
+        <div class="container">
+            <div class="slider-car-box">
+                <div class="slider-car-big">
+                    <div class="slider-car-big--item" style="background-image: url(../img/car-card5.jpg);"></div>
+                    <div class="slider-car-big--item" style="background-image: url(../img/car-card6.jpg);"></div>
+                    <div class="slider-car-big--item" style="background-image: url(../img/car-card4.jpg);"></div>
+                    <div class="slider-car-big--item" style="background-image: url(../img/car-card3.jpg);"></div>
+                    <div class="slider-car-big--item" style="background-image: url(../img/car-card1.jpg);"></div>
+                    <div class="slider-car-big--item" style="background-image: url(../img/car-card2.jpg);"></div>
+                </div>
+                <div class="slider-car-thumbs">
+                    <div class="slider-car-thumbs--item" style="background-image: url(../img/car-card5.jpg);"></div>
+                    <div class="slider-car-thumbs--item" style="background-image: url(../img/car-card6.jpg);"></div>
+                    <div class="slider-car-thumbs--item" style="background-image: url(../img/car-card4.jpg);"></div>
+                    <div class="slider-car-thumbs--item" style="background-image: url(../img/car-card3.jpg);"></div>
+                    <div class="slider-car-thumbs--item" style="background-image: url(../img/car-card1.jpg);"></div>
+                    <div class="slider-car-thumbs--item" style="background-image: url(../img/car-card2.jpg);"></div>
+                </div>
+            </div>
+
+            <!-- Слайдер для мобилной версии (НАЧАЛО) -->
+            <div class="slider-car-box slider-car-box--mobile">
+                <div class="slider-car-big--mobile">
+                    <div class="slider-car-big--item--mobile" id="car-card-img1" style="background-image: url(../img/car-card5.jpg);"></div>
+                    <div class="slider-car-big--item--mobile" id="car-card-img2" style="background-image: url(../img/car-card6.jpg); display: none;"></div>
+                    <div class="slider-car-big--item--mobile" id="car-card-img3" style="background-image: url(../img/car-card4.jpg); display: none;"></div>
+                    <div class="slider-car-big--item--mobile" id="car-card-img4" style="background-image: url(../img/car-card3.jpg); display: none;"></div>
+                    <div class="slider-car-big--item--mobile" id="car-card-img5" style="background-image: url(../img/car-card1.jpg); display: none;"></div>
+                    <div class="slider-car-big--item--mobile" id="car-card-img6" style="background-image: url(../img/car-card2.jpg); display: none;"></div>
+                </div>
+                <div class="slider-car-thumbs--mobile">
+                    <div class="slider-car-thumbs--item--mobile active" data-switch="car-card-img1" style="background-image: url(../img/car-card5.jpg);"></div>
+                    <div class="slider-car-thumbs--item--mobile" data-switch="car-card-img2" style="background-image: url(../img/car-card6.jpg);"></div>
+                    <div class="slider-car-thumbs--item--mobile" data-switch="car-card-img3" style="background-image: url(../img/car-card4.jpg);"></div>
+                    <div class="slider-car-thumbs--item--mobile" data-switch="car-card-img4" style="background-image: url(../img/car-card3.jpg);"></div>
+                    <div class="slider-car-thumbs--item--mobile" data-switch="car-card-img5" style="background-image: url(../img/car-card1.jpg);"></div>
+                    <div class="slider-car-thumbs--item--mobile" data-switch="car-card-img6" style="background-image: url(../img/car-card2.jpg);"></div>
+                </div>
+            </div>
+            <!-- Слайдер для мобилной версии (КОНЕЦ) -->
+
+            <div class="auto-card-content">
+                <h1>Volvo XC90</h1>
+                <ul class="breadcrumbs">
+                    <li><a href="#">Главная</a></li>
+                    <li><a href="#">Модельный ряд</a></li>
+                    <li><a href="#">Volvo XC90</a></li>
+                </ul>
+
+                <div class="auto-card-content__main-info">
+                    <div class="auto-card-content__main-info-left">
+                        <div class="auto-card-table">
+                            <div class="auto-card-table-tr auto-card-table-th">
+                                <div class="auto-card-table-td">Кузов</div>
+                                <div class="auto-card-table-td">Трансмиссия</div>
+                                <div class="auto-card-table-td">Комплектация</div>
+                                <div class="auto-card-table-td">Двигатель</div>
+                            </div>
+                            <div class="auto-card-table-tr">
+                                <div class="auto-card-table-td">Седан</div>
+                                <div class="auto-card-table-td">Автоматическая</div>
+                                <div class="auto-card-table-td">AWD Auto Momentum</div>
+                                <div class="auto-card-table-td">235 л.с.</div>
+                            </div>
+                        </div>
+
+                        <!-- Таблица для мобильной версии (НАЧАЛО) -->
+                        <div class="auto-card-table--mobile">
+                            <div class="auto-card-table--mobile-item">
+                                <span>Кузов</span>
+                                <b>Седан</b>
+                            </div>
+                            <div class="auto-card-table--mobile-item">
+                                <span>Трансмиссия</span>
+                                <b>Автоматическая</b>
+                            </div>
+                            <div class="auto-card-table--mobile-item">
+                                <span>Комплектация</span>
+                                <b>AWD Auto Momentum</b>
+                            </div>
+                            <div class="auto-card-table--mobile-item">
+                                <span>Двигатель</span>
+                                <b>235 л.с.</b>
+                            </div>
+                        </div>
+                        <!-- Таблица для мобильной версии (КОНЕЦ) -->
+
+                    </div>
+                    <div class="auto-card-content__main-info-right">
+                        <div class="auto-card-price">4 459 000 ₽</div>
+                        <a href="#" class="btn-blue"><span>Купить</span></a>
+                        <a href="#" class="auto-card-link-credit">Заявка на кредит</a>
+                    </div>
+                </div>
+
+                <div class="auto-card-content__desc">
+                    <div class="title">Описание</div>
+                    <p>Volvo XC90 — это потрясающий автомобиль, который сочетает в себе мужественный внешний облик и утонченный интерьер. Оказавшись внутри, вы оцените непревзойденное удобство и совершенство каждой детали. Например, эргономичные сиденья,
+                        идеально повторяющие форму человеческого тела, сделают каждую вашу поездку максимально комфортной. </p>
+                </div>
+
+                <div class="auto-card-content__coml">
+                    <div class="title">Комплектация Momentum</div>
+                    <div class="auto-card-content__coml-items">
+                        <p>Стандартный цвет потолка и стоек</p>
+                        <p>Зеркала косметические для водителя и пассажира, с подсветкой</p>
+                        <p>3-хспицевое рулевое колесо, отделанное кожей с декоративными вставками</p>
+                        <p>Отделка рукоятки КПП кожей с декоративными вставками</p>
+                        <p>Стандартные педали</p>
+
+                        <p>Рейлинги продольные на крыше - на черных опорах серебристые</p>
+                        <p>Решетка радиатора стандартная, черная глянцевая</p>
+                        <p>Хромированные вставки в переднем бампере, с правой и левой стороны</p>
+                        <p>Хромированная окантовка боковых окон</p>
+                        <p>Бампера и молдинги, окрашенные в цвет кузова</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    @@include("../../blocks/modules/footer/footer.html")
+    <script src="../js/main.js"></script>
+    <script src="../js/vendor.js"></script>
+</body>
+
+</html>

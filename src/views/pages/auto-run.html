@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Авто</title>
+    <meta name="theme-color" content="#c9e0e04d">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="shortcut icon" href="img/favicons/favicon.ico" type="image/x-icon">
+    <link rel="icon" sizes="16x16" href="img/favicons/favicon-16x16.png" type="image/png">
+    <link rel="icon" sizes="32x32" href="img/favicons/favicon-32x32.png" type="image/png">
+    <link rel="apple-touch-icon-precomposed" href="img/favicons/apple-touch-icon-precomposed.png">
+    <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/favicons/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicons/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/favicons/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicons/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/favicons/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/favicons/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/favicons/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="167x167" href="img/favicons/apple-touch-icon-167x167.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon-180x180.png">
+    <link rel="apple-touch-icon" sizes="1024x1024" href="img/favicons/apple-touch-icon-1024x1024.png">
+    <link rel="stylesheet" href="../styles/main.css">
+</head>
+
+<body class="auto-run-page vn">
+    @@include("../../blocks/modules/header/header.html")
+    <div class="top-wrap">
+        <div class="fixed-block">
+            <a href="javascript: void(0);" class="btn-test-drive">
+                <i></i>
+                <span>Запись на<br> тест-драйв </span>
+            </a>
+            <a href="javascript: void(0);" class="btn-callback">
+                <i></i>
+                <span>Заказть<br> звонок</span>
+            </a>
+        </div>
+        <div class="title">Автомобили Volvo с пробегом<br> у официального дилера</div>
+        <div class="desc">Программа Volvo Select - это готовность Volvo предоставить Вам не только качественный автомобиль, но и дополнительные услуги, благодаря чему автомобили Volvo Select максимально приближены к новым автомобилям.</div>
+
+    </div>
+
+    <div class="auto-run">
+        <div class="container">
+            <div class="auto-run-wrap">
+                <div class="auto-run__sidebar">
+                    <ul class="breadcrumbs">
+                        <li><a href="#">Главная</a></li>
+                        <li><a href="#">Автомобили в продаже</a></li>
+                    </ul>
+                    <div class="filter">
+                        <select class="select-sidebar" name="" id="">
+                            <option value="" hidden>Модель или кузов</option>
+                            <option value="xc60">xc60</option>
+                            <option value="xc90">xc90</option>
+                            <option value="xc40">xc40</option>
+                        </select>
+                        <div class="filter-item-input">
+                            <input type="text" placeholder="Цена от">
+                            <input type="text" placeholder="до">
+                        </div>
+                        <div class="filter-item-input">
+                            <input type="text" placeholder="Год от">
+                            <input type="text" placeholder="до">
+                        </div>
+                        <div class="filter-item-input">
+                            <input type="text" placeholder="Пробег от">
+                            <input type="text" placeholder="до">
+                        </div>
+                        <select class="select-sidebar" name="" id="">
+                            <option value="" hidden>Тип двигателя</option>
+                            <option value="2,0 л">2,0 л</option>
+                            <option value="1,8 л">1,8 л</option>
+                            <option value="1,6 л">1,6 л</option>
+                        </select>
+                        <select class="select-sidebar" name="" id="">
+                            <option value="" hidden>Тип КПП</option>
+                            <option value="АКПП">АКПП</option>
+                            <option value="МКПП">МКПП</option>
+                            <option value="Робот">Робот</option>
+                            <option value="Вариатор">Вариатор</option>
+                        </select>
+                        <select class="select-sidebar" name="" id="">
+                            <option value="" hidden>Привод</option>
+                            <option value="Передний">Передний</option>
+                            <option value="Задний">Задний</option>
+                        </select>
+                        <select class="select-sidebar" name="" id="">
+                            <option value="" hidden>Объем двигателя</option>
+                            <option value="2,0 л">2,0 л</option>
+                            <option value="1,8 л">1,8 л</option>
+                            <option value="1,6 л">1,6 л</option>
+                        </select>
+                        <select class="select-sidebar select-sidebar-color" name="" id="">
+                            <option value="" hidden>Цвет</option>
+                            <option value="Белый">Белый</option>
+                            <option value="Чёрный">Чёрный</option>
+                            <option value="Серый">Серый</option>
+                            <option value="Зелёный">Зелёный</option>
+                            <option value="Красный">Красный</option>
+                            <option value="Золотистый">Золотистый</option>
+                            <option value="Синий">Синий</option>
+                        </select>
+                        <div class="color-box-desctop">
+                            <div class="title">Цвет:</div>
+                            <div class="filter-color">
+                                <a href="javascript: void(0);" class="filter-color__item white"></a>
+                                <a href="javascript: void(0);" class="filter-color__item black"></a>
+                                <a href="javascript: void(0);" class="filter-color__item gray"></a>
+                                <a href="javascript: void(0);" class="filter-color__item green"></a>
+                                <a href="javascript: void(0);" class="filter-color__item red"></a>
+                                <a href="javascript: void(0);" class="filter-color__item orange"></a>
+                                <a href="javascript: void(0);" class="filter-color__item blue"></a>
+                            </div>
+                        </div>
+                        <a href="#" class="btn-blue"><span>Искать</span></a>
+                    </div>
+                </div>
+                <div class="auto-run__auto-list">
+                    <div class="auto-run-sort">
+                        <button class="button-sort sort-up-to-down">по цене</button>
+                        <button class="button-sort sort-up-to-down">по пробегу</button>
+                        <button class="button-sort sort-up-to-down">по году выпуска</button>
+                    </div>
+
+                    <div class="auto-run__box">
+
+                        <div class="auto-run-card__item">
+                            <div class="auto-run-card__item--img">
+                                <img src="../img/car-run1.jpg" alt="">
+                                <img src="../img/xc60.jpg" alt="">
+                                <img src="../img/s60.jpg" alt="">
+                                <img src="../img/v40.jpg" alt="">
+                            </div>
+                            <div class="auto-run-card__item--content">
+                                <div class="auto-run-card__item--name">Volvo S60 AWD Inscription</div>
+                                <div class="auto-run-card__item--char">
+                                    <span>2015 г.</span>
+                                    <span>82200 км</span>
+                                    <span>АКПП</span>
+                                    <span>Чёрный</span>
+                                </div>
+                                <div class="auto-run-card__item--price">1 170 000 ₽</div>
+                                <a href="#" class="btn-blue"><span>Карточка модели</span></a>
+                            </div>
+                        </div>
+
+                        <div class="auto-run-card__item">
+                            <div class="auto-run-card__item--img">
+                                <img src="../img/car-run1.jpg" alt="">
+                                <img src="../img/v40.jpg" alt="">
+                                <img src="../img/s60.jpg" alt="">
+                                <img src="../img/xc60.jpg" alt="">
+                            </div>
+                            <div class="auto-run-card__item--content">
+                                <div class="auto-run-card__item--name">Volvo S60 AWD Inscription</div>
+                                <div class="auto-run-card__item--char">
+                                    <span>2015 г.</span>
+                                    <span>82200 км</span>
+                                    <span>АКПП</span>
+                                    <span>Чёрный</span>
+                                </div>
+                                <div class="auto-run-card__item--price">1 170 000 ₽</div>
+                                <a href="#" class="btn-blue"><span>Карточка модели</span></a>
+                            </div>
+                        </div>
+
+                        <div class="auto-run-card__item">
+                            <div class="auto-run-card__item--img">
+                                <img src="../img/car-run1.jpg" alt="">
+                                <img src="../img/xc60.jpg" alt="">
+                                <img src="../img/v40.jpg" alt="">
+                                <img src="../img/s60.jpg" alt="">
+                            </div>
+                            <div class="auto-run-card__item--content">
+                                <div class="auto-run-card__item--name">Volvo S60 AWD Inscription</div>
+                                <div class="auto-run-card__item--char">
+                                    <span>2015 г.</span>
+                                    <span>82200 км</span>
+                                    <span>АКПП</span>
+                                    <span>Чёрный</span>
+                                </div>
+                                <div class="auto-run-card__item--price">1 170 000 ₽</div>
+                                <a href="#" class="btn-blue"><span>Карточка модели</span></a>
+                            </div>
+                        </div>
+
+                        <div class="auto-run-card__item">
+                            <div class="auto-run-card__item--img">
+                                <img src="../img/car-run1.jpg" alt="">
+                                <img src="../img/xc60.jpg" alt="">
+                                <img src="../img/v40.jpg" alt="">
+                                <img src="../img/s60.jpg" alt="">
+                            </div>
+                            <div class="auto-run-card__item--content">
+                                <div class="auto-run-card__item--name">Volvo S60 AWD Inscription</div>
+                                <div class="auto-run-card__item--char">
+                                    <span>2015 г.</span>
+                                    <span>82200 км</span>
+                                    <span>АКПП</span>
+                                    <span>Чёрный</span>
+                                </div>
+                                <div class="auto-run-card__item--price">1 170 000 ₽</div>
+                                <a href="#" class="btn-blue"><span>Карточка модели</span></a>
+                            </div>
+                        </div>
+
+                        <div class="auto-run-card__item">
+                            <div class="auto-run-card__item--img">
+                                <img src="../img/car-run1.jpg" alt="">
+                                <img src="../img/xc60.jpg" alt="">
+                                <img src="../img/v40.jpg" alt="">
+                                <img src="../img/s60.jpg" alt="">
+                            </div>
+                            <div class="auto-run-card__item--content">
+                                <div class="auto-run-card__item--name">Volvo S60 AWD Inscription</div>
+                                <div class="auto-run-card__item--char">
+                                    <span>2015 г.</span>
+                                    <span>82200 км</span>
+                                    <span>АКПП</span>
+                                    <span>Чёрный</span>
+                                </div>
+                                <div class="auto-run-card__item--price">1 170 000 ₽</div>
+                                <a href="#" class="btn-blue"><span>Карточка модели</span></a>
+                            </div>
+                        </div>
+
+                        <div class="auto-run-card__item">
+                            <div class="auto-run-card__item--img">
+                                <img src="../img/car-run1.jpg" alt="">
+                                <img src="../img/xc60.jpg" alt="">
+                                <img src="../img/v40.jpg" alt="">
+                                <img src="../img/s60.jpg" alt="">
+                            </div>
+                            <div class="auto-run-card__item--content">
+                                <div class="auto-run-card__item--name">Volvo S60 AWD Inscription</div>
+                                <div class="auto-run-card__item--char">
+                                    <span>2015 г.</span>
+                                    <span>82200 км</span>
+                                    <span>АКПП</span>
+                                    <span>Чёрный</span>
+                                </div>
+                                <div class="auto-run-card__item--price">1 170 000 ₽</div>
+                                <a href="#" class="btn-blue"><span>Карточка модели</span></a>
+                            </div>
+                        </div>
+
+                        <div class="auto-run-card__item">
+                            <div class="auto-run-card__item--img">
+                                <img src="../img/car-run1.jpg" alt="">
+                                <img src="../img/xc60.jpg" alt="">
+                                <img src="../img/v40.jpg" alt="">
+                                <img src="../img/s60.jpg" alt="">
+                            </div>
+                            <div class="auto-run-card__item--content">
+                                <div class="auto-run-card__item--name">Volvo S60 AWD Inscription</div>
+                                <div class="auto-run-card__item--char">
+                                    <span>2015 г.</span>
+                                    <span>82200 км</span>
+                                    <span>АКПП</span>
+                                    <span>Чёрный</span>
+                                </div>
+                                <div class="auto-run-card__item--price">1 170 000 ₽</div>
+                                <a href="#" class="btn-blue"><span>Карточка модели</span></a>
+                            </div>
+                        </div>
+
+                        <div class="auto-run-card__item">
+                            <div class="auto-run-card__item--img">
+                                <img src="../img/car-run1.jpg" alt="">
+                                <img src="../img/xc60.jpg" alt="">
+                                <img src="../img/v40.jpg" alt="">
+                                <img src="../img/s60.jpg" alt="">
+                            </div>
+                            <div class="auto-run-card__item--content">
+                                <div class="auto-run-card__item--name">Volvo S60 AWD Inscription</div>
+                                <div class="auto-run-card__item--char">
+                                    <span>2015 г.</span>
+                                    <span>82200 км</span>
+                                    <span>АКПП</span>
+                                    <span>Чёрный</span>
+                                </div>
+                                <div class="auto-run-card__item--price">1 170 000 ₽</div>
+                                <a href="#" class="btn-blue"><span>Карточка модели</span></a>
+                            </div>
+                        </div>
+
+                        <div class="auto-run-card__item">
+                            <div class="auto-run-card__item--img">
+                                <img src="../img/car-run1.jpg" alt="">
+                                <img src="../img/xc60.jpg" alt="">
+                                <img src="../img/v40.jpg" alt="">
+                                <img src="../img/s60.jpg" alt="">
+                            </div>
+                            <div class="auto-run-card__item--content">
+                                <div class="auto-run-card__item--name">Volvo S60 AWD Inscription</div>
+                                <div class="auto-run-card__item--char">
+                                    <span>2015 г.</span>
+                                    <span>82200 км</span>
+                                    <span>АКПП</span>
+                                    <span>Чёрный</span>
+                                </div>
+                                <div class="auto-run-card__item--price">1 170 000 ₽</div>
+                                <a href="#" class="btn-blue"><span>Карточка модели</span></a>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+
+    @@include("../../blocks/modules/footer/footer.html")
+    <script src="../js/main.js"></script>
+    <script src="../js/vendor.js"></script>
+</body>
+
+</html>

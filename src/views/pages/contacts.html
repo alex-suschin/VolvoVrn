@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Контакты</title>
+    <meta name="theme-color" content="#c9e0e04d">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="shortcut icon" href="img/favicons/favicon.ico" type="image/x-icon">
+    <link rel="icon" sizes="16x16" href="img/favicons/favicon-16x16.png" type="image/png">
+    <link rel="icon" sizes="32x32" href="img/favicons/favicon-32x32.png" type="image/png">
+    <link rel="apple-touch-icon-precomposed" href="img/favicons/apple-touch-icon-precomposed.png">
+    <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/favicons/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicons/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/favicons/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicons/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/favicons/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/favicons/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/favicons/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="167x167" href="img/favicons/apple-touch-icon-167x167.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon-180x180.png">
+    <link rel="apple-touch-icon" sizes="1024x1024" href="img/favicons/apple-touch-icon-1024x1024.png">
+    <link rel="stylesheet" href="../styles/main.css">
+</head>
+
+<body class="contacts-page vn">
+    @@include("../../blocks/modules/header/header.html")
+    <div class="top-wrap">
+        <div class="fixed-block">
+            <a href="javascript: void(0);" class="btn-test-drive">
+                <i></i>
+                <span>Запись на<br> тест-драйв </span>
+            </a>
+            <a href="javascript: void(0);" class="btn-callback">
+                <i></i>
+                <span>Заказть<br> звонок</span>
+            </a>
+        </div>
+        <div class="title">Контактная информация</div>
+        <div class="desc">Выбор правильного автомобиля всегда сопряжён с выбором приемлемых финансовых условий. В Volvo готовы представить вам несколько продуктов, с которыми покупка автомобиля станет комфортнее.</div>
+
+    </div>
+
+    <div class="contacts-wrap">
+        <div class="container">
+            <div class="contacts-box">
+                <div class="contacts-info-left">
+                    <div class="title">Контактная информация</div>
+                    <div class="contacts-info__item">
+                        <b>Адрес</b>
+                        <p>394033, г. Воронеж, ул. Изыскателей, 23</p>
+                        <a href="#" class="btn-blue"><span>Проложить маршрут</span></a>
+                    </div>
+                    <div class="contacts-info__item">
+                        <b>Телефон:</b>
+                        <span>Салон:</span><a href="tel:+74732122761">+7 (473) 21-227-61</a>
+                    </div>
+                    <div class="contacts-info__item">
+                        <b>Режим работы:</b>
+                        <p class="p-non-margin">Пн-Пт: с 09:00 до 21:00</p>
+                        <p>Вс: с 09:00 до 18:00</p>
+                    </div>
+                </div>
+                <div class="contacts-info-right">
+                    <div id="map" class="map"></div>
+                </div>
+            </div>
+
+            <div class="contacts-form-wrap">
+                <div class="title">Свяжитесь с нами</div>
+                <form action="" method="post">
+                    <div class="contacts-form__item-double">
+                        <label for="">Фамилия</label>
+                        <input type="text">
+                    </div>
+                    <div class="contacts-form__item-double">
+                        <label for="">Имя</label>
+                        <input type="text">
+                    </div>
+                    <div class="contacts-form__item non-margin">
+                        <label for="">Телефон</label>
+                        <input type="tel" minlength="11" maxlength="12">
+                    </div>
+                    <div class="contacts-form__item">
+                        <label for="">Тема сообщения</label>
+                        <input type="text">
+                    </div>
+                    <div class="contacts-form__item non-margin">
+                        <label for="">E-mail</label>
+                        <input type="e-mail">
+                    </div>
+                    <div class="contacts-form__item non-margin">
+                        <label for="">Ваше сообщение</label>
+                        <textarea name="" id=""></textarea>
+                    </div>
+                    <div class="contacts-form__item-last">
+                        <input type="checkbox" name="check" id="check" class="checkbox"><label for="check">Согласие на на обработку персональных данных  </label>
+                        <button type="submit" class="btn-blue"><span>Отправить</span></button>
+                    </div>
+
+                </form>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    @@include("../../blocks/modules/footer/footer.html")
+    <script src="../js/main.js"></script>
+    <script src="../js/vendor.js"></script>
+    <script src="//api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+
+    <script>
+        ymaps.ready(init);
+
+        function init() {
+            var myMap = new ymaps.Map("map", {
+                // Центр карты, указываем коордианты
+                center: [51.663853, 39.299749],
+                // Масштаб, тут все просто
+                zoom: 15,
+                // Отключаем все элементы управления
+                controls: []
+            });
+
+            myMap.controls.add('zoomControl');
+
+            var myGeoObjects = [];
+
+            // Наша метка, указываем коордианты
+            myGeoObjects = new ymaps.Placemark([51.663853, 39.299749], {
+                balloonContentBody: 'Volvo VRN',
+            }, {
+                iconLayout: 'default#image',
+                // Путь до нашей картинки
+                iconImageHref: '../img/svg/map-gps.svg',
+                // Размер по ширине и высоте
+                iconImageSize: [60, 65],
+                // Смещение левого верхнего угла иконки относительно
+                // её «ножки» (точки привязки).
+                iconImageOffset: [-25, 10]
+            });
+
+            var clusterer = new ymaps.Clusterer({
+                clusterDisableClickZoom: false,
+                clusterOpenBalloonOnClick: false,
+            });
+
+            clusterer.add(myGeoObjects);
+            myMap.geoObjects.add(clusterer);
+            // Отлючаем возможность изменения масштаба
+            myMap.behaviors.disable('scrollZoom');
+
+        }
+    </script>
+</body>
+
+</html>
