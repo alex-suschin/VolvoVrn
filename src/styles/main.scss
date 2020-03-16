@@ -2815,6 +2815,10 @@ P O P U P
     display: none;
 }
 
+.slider-news__item-text--mobile {
+    display: none;
+}
+
 
 /*
     M E D I A  
@@ -4092,6 +4096,30 @@ P O P U P
 }
 
 @media screen and (max-width: 575px) {
+    .slider-news {
+        display: none;
+    }
+    .slider-news__item-text--mobile {
+        display: block;
+        padding: 25px 10px 0;
+        background: #EFEFEF;
+        min-height: 277px;
+        margin: 0;
+        margin-bottom: 6px;
+    }
+    .slider-news__item-text--mobile .slider-news-title-left {
+        font-weight: normal;
+        font-size: 17px;
+        line-height: 130%;
+        color: #030303;
+        margin-bottom: 8px;
+    }
+    .slider-news__item-text--mobile p {
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 130%;
+        color: #030303;
+    }
     .slider-top {
         display: none;
         visibility: hidden;
