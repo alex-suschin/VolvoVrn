@@ -6001,24 +6001,125 @@ P O P U P
     padding: 17px 0 18px 0;
   }
 
-  .special-page .auto-credit-box .btn-blue:hover span {
+  .btn-blue:hover {
+    color: #1C88D0;
+    background: transparent;
+  }
+
+  .btn-blue:active {
+    color: #fff;
+    background: #1C88D0;
+  }
+
+  .btn-blue:hover span {
+    background: url(../img/svg/arr-blue.svg) no-repeat center right;
     background-size: 8%;
   }
 
-  .auto-credit-box .btn-blue:hover span {
+  .special-page .auto-credit-box .btn-blue:active span {
+    background: url(../img/svg/arr-white.svg) no-repeat center right;
     background-size: 8%;
   }
 
-  .contacts-form-wrap button:hover span {
+  .auto-credit-box .btn-blue:active span {
+    background: url(../img/svg/arr-white.svg) no-repeat center right;
     background-size: 8%;
   }
 
-  .finance-item .btn-blue:hover span {
+  .contacts-form-wrap button:active span {
+    background: url(../img/svg/arr-white.svg) no-repeat center right;
     background-size: 8%;
+  }
+
+  .finance-item .btn-blue:active span {
+    background: url(../img/svg/arr-white.svg) no-repeat center right;
+    background-size: 8%;
+  }
+
+  .content-desc__text a:active {
+    background: url(../img/svg/arr-white.svg) no-repeat center right;
+    background-size: 10%;
   }
 
   .content-desc__text a:hover {
+    background: url(../img/svg/arr-blue.svg) no-repeat center right;
     background-size: 10%;
+    color: #1C88D0;
+  }
+
+  .content-desc__text a:active {
+    background: url(../img/svg/arr-blue-hover.svg) no-repeat center right;
+    color: #0565A6;
+    background-size: 10%;
+  }
+
+  .auto-card__item--links a:hover {
+    color: #1C88D0;
+  }
+
+  .auto-card__item--links a:hover::after {
+    background: url(../img/svg/arr-blue.svg) no-repeat center right;
+  }
+
+  .auto-card__item--links a:active {
+    color: #0565A6;
+  }
+
+  .auto-card__item--links a:active::after {
+    background: url(../img/svg/arr-blue-hover.svg) no-repeat center right;
+  }
+
+  .auto-description__text a:hover {
+    color: #1C88D0;
+    background: url(../img/svg/arr-blue.svg) no-repeat center right;
+    background-size: 7%;
+  }
+
+  .auto-description__text a:active {
+    color: #0565A6;
+    background: url(../img/svg/arr-blue-hover.svg) no-repeat center right;
+    background-size: 7%;
+  }
+
+  .exelent-auto-item .btn-blue:active span {
+    background: url(../img/svg/arr-white.svg) no-repeat center right;
+    background-size: 8%;
+  }
+
+  .auto-card-content__main-info-right .btn-blue:active span {
+    background: url(../img/svg/arr-white.svg) no-repeat center right;
+    background-size: 10%;
+  }
+
+  .auto-card-content__main-info-right .auto-card-link-credit:hover {
+    color: #1C88D0;
+    background: url(../img/svg/arr-blue.svg) no-repeat center right;
+  }
+
+  .auto-card-content__main-info-right .auto-card-link-credit:active {
+    color: #0565A6;
+    background: url(../img/svg/arr-blue-hover.svg) no-repeat center right;
+  }
+
+  .filter .btn-blue:active span {
+    background: url(../img/svg/arr-white.svg) no-repeat center right;
+    background-size: 12%;
+  }
+
+  .auto-run-card__item .btn-blue span {
+    background: url(../img/svg/arr-blue.svg) no-repeat center right;
+    padding: 0 15px 3px 0;
+    background-size: 5%;
+  }
+
+  .auto-run-card__item .btn-blue:active span {
+    background: url(../img/svg/arr-white.svg) no-repeat center right;
+    padding: 0 15px 3px 0;
+    background-size: 5%;
+  }
+
+  .auto-sale-page .auto-card__item--links a::after {
+    top: 3px;
   }
 
   .main-page .auto-card__item {
@@ -6050,6 +6151,10 @@ P O P U P
   .contacts-info__item .btn-blue span {
     padding: 0 19px 3px 0;
     background-size: 4.5%;
+  }
+
+  .contacts-info__item .btn-blue:hover {
+    color: #fff;
   }
 
   .contacts-info__item .btn-blue:hover span {

@@ -1609,8 +1609,7 @@ $(document).ready(function () {
   }, _defineProperty(_$$slick, "infinite", false), _defineProperty(_$$slick, "swipeToSlide", true), _defineProperty(_$$slick, "arrows", false), _defineProperty(_$$slick, "responsive", [{
     breakpoint: 1751,
     settings: {
-      infinite: true,
-      centerMode: true
+      infinite: true
     }
   }, {
     breakpoint: 576,

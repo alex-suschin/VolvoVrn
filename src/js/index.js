@@ -30,8 +30,7 @@ $(document).ready(function() {
         responsive: [{
                 breakpoint: 1751,
                 settings: {
-                    infinite: true,
-                    centerMode: true
+                    infinite: true
                 }
             },
             {
