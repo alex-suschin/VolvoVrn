@@ -6012,6 +6012,10 @@ P O P U P
     height: 1px;
   }
 
+  .top-wrap {
+    overflow: hidden;
+  }
+
   .top-slide-mobile.slick-initialized {
     margin-bottom: 6px;
   }
