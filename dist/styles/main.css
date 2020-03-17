@@ -2112,6 +2112,11 @@ nav nav nav ul li .slider-top__item {
   padding: 88px 40px 0 40px;
 }
 
+.slider-news__item a {
+  display: block;
+  box-sizing: border-box;
+}
+
 .slider-news-col-first .slider-news-small-item-b .slider-news-date {
   margin-bottom: 32px;
 }
@@ -5250,12 +5255,10 @@ P O P U P
 
   .top-menu > li > a {
     display: block;
-    opacity: 0;
     transition: .4s;
     font-size: 14px;
     border: none;
     padding: 15px 0 15px 29px;
-    transform: translateX(-200px);
   }
 
   .top-menu li:first-child {
@@ -7241,6 +7244,8 @@ P O P U P
   }
 
   .news-mobile .slider-news-item {
+    display: block;
+    box-sizing: border-box;
     min-height: 133px;
     max-width: 100%;
     width: 49%;
