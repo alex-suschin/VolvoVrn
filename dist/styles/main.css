@@ -1702,7 +1702,7 @@ H E A D E R
 }
 
 .diler-title {
-  font-family: arial, sans-serif;
+  font-family: "Volvo Novum", sans-serif;
   font-weight: normal;
   font-size: 18px;
   line-height: 21px;
@@ -1712,7 +1712,7 @@ H E A D E R
 .address-phone span {
   display: inline-block;
   margin: 0 51px 0 0;
-  font-family: arial, sans-serif;
+  font-family: "Volvo Novum", sans-serif;
   font-weight: normal;
   font-size: 18px;
   line-height: 21px;
@@ -1720,7 +1720,7 @@ H E A D E R
 }
 
 .address-phone a {
-  font-family: arial, sans-serif;
+  font-family: "Volvo Novum", sans-serif;
   font-weight: normal;
   font-size: 18px;
   line-height: 21px;
@@ -1795,7 +1795,7 @@ nav .dropdown-menu-box {
 }
 
 nav .dropdown-menu-box li a {
-  font-family: arial, sans-serif;
+  font-family: "Volvo Novum", sans-serif;
   font-weight: normal;
   font-size: 18px;
   line-height: 1;
@@ -2292,7 +2292,7 @@ nav nav nav ul li .slider-top__item {
 }
 
 .footer nav a {
-  font-family: arial, sans-serif;
+  font-family: "Volvo Novum", sans-serif;
   font-size: 18px;
   line-height: 21px;
   padding: 0;
@@ -2312,7 +2312,7 @@ nav nav nav ul li .slider-top__item {
 }
 
 .footer-diler-name {
-  font-family: arial, sans-serif;
+  font-family: "Volvo Novum", sans-serif;
   font-size: 16px;
   line-height: 100%;
   text-align: center;
@@ -2322,7 +2322,7 @@ nav nav nav ul li .slider-top__item {
 }
 
 .footer-address {
-  font-family: arial, sans-serif;
+  font-family: "Volvo Novum", sans-serif;
   font-weight: normal;
   font-size: 16px;
   line-height: 34px;
@@ -2821,7 +2821,7 @@ V N
 }
 
 .auto-list .title {
-  font-family: arial, sans-serif;
+  font-family: "Volvo Novum", sans-serif;
   text-align: left;
   font-weight: normal;
   font-size: 42px;
@@ -4663,15 +4663,33 @@ P O P U P
   }
 
   .slider-top__item {
-    min-height: 700px;
+    min-height: 600px;
   }
 
   .auto-in-stock__slider .slick-dots li {
     margin: 0 10px;
   }
+
+  .slider-top-name {
+    margin-bottom: 15px;
+  }
+
+  .slider-top-title {
+    font-size: 34px;
+    line-height: 100%;
+    margin-bottom: 15px;
+  }
+
+  .slider-top-desc {
+    font-size: 16px;
+  }
 }
 
 @media screen and (max-width: 1366px) {
+  .slider-top__content-wrap {
+    padding: 0px 80px 150px 0px;
+  }
+
   .auto-card__item--img {
     background-size: contain;
   }
@@ -5026,36 +5044,53 @@ P O P U P
     margin-left: 5px;
     margin-bottom: 2px;
     position: absolute;
-    top: 24px;
+    top: 12px;
     right: 15px;
-    width: 11px;
-    height: 6px;
-    background: url(../img/svg/arr-menu.svg) center no-repeat;
+    width: 30px;
+    height: 30px;
+    background: url(../img/arr-big-mob.png) center no-repeat;
+    background-size: 50% !important;
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
     transition: .1s linear;
+    margin: 0;
   }
 
   .header nav li:first-child a.dropdown-menu + i {
-    top: 31px;
+    top: 20px;
   }
 
   .footer nav a {
     display: inline-block;
+    padding: 17px 2px 10px 2px;
+    margin-left: 8px;
   }
 
   .footer nav a.dropdown-menu + i {
     display: inline-block;
-    margin-left: 5px;
-    margin-bottom: 2px;
+    margin-left: -8px;
+    margin-top: 0;
+    vertical-align: middle;
     position: static;
     right: 15px;
-    width: 11px;
-    height: 6px;
-    background: url(../img/svg/arr-menu.svg) center no-repeat;
+    width: 30px;
+    height: 30px;
+    background: url(../img/arr-big-mob.png) center no-repeat;
+    background-size: 34% !important;
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
     transition: .1s linear;
   }
 
   .footer nav li {
     text-align: center;
+    margin-bottom: 0;
   }
 
   .content-ex-items {
@@ -5265,7 +5300,7 @@ P O P U P
   }
 
   .diler-title {
-    font-family: arial, sans-serif;
+    font-family: "Volvo Novum", sans-serif;
     font-weight: normal;
     font-size: 9px;
     line-height: 10px;
@@ -5316,11 +5351,11 @@ P O P U P
   }
 
   nav ul.top_menu_active li.active-drop a.dropdown-menu + i {
-    transform: rotate(180deg);
-    -webkit-transform: rotate(180deg);
-    -moz-transform: rotate(180deg);
-    -ms-transform: rotate(180deg);
-    -o-transform: rotate(180deg);
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
   }
 
   .footer nav ul li:hover > a.dropdown-menu:after {
@@ -5332,11 +5367,11 @@ P O P U P
   }
 
   .footer nav ul.bottom-menu li.active-drop a.dropdown-menu + i {
-    transform: rotate(180deg);
-    -webkit-transform: rotate(180deg);
-    -moz-transform: rotate(180deg);
-    -ms-transform: rotate(180deg);
-    -o-transform: rotate(180deg);
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
   }
 
   .slider-top .slick-dots li {
@@ -5944,8 +5979,54 @@ P O P U P
 }
 
 @media screen and (max-width: 575px) {
+  .news-mobile.slick-initialized .slick-slide {
+    display: flex;
+  }
+
+  .news-mobile__item {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 5px;
+  }
+
+  .news-mobile .slick-list {
+    margin: 0 -5px;
+  }
+
+  .news-mobile .slick-dots {
+    bottom: -25px;
+  }
+
+  .news-mobile .slick-dots .slick-active button {
+    background: #F5F5F5;
+  }
+
+  .news-mobile .slick-dots button {
+    background: #DEDEDE;
+  }
+
+  .top-slide-mobile {
+    margin-bottom: 6px;
+  }
+
+  .top-slide-mobile__item {
+    outline: none;
+    width: 100%;
+    max-width: 100%;
+  }
+
   .slider-news {
     display: none;
+  }
+
+  .top-slide-mobile .slick-dots {
+    bottom: 15px;
+  }
+
+  .slick-dots li {
+    max-width: 35px;
+    margin: 0 5px;
   }
 
   .slider-news__item-text--mobile {
@@ -6742,7 +6823,7 @@ P O P U P
 
   .top-slide-mobile__content {
     background-color: #000;
-    padding: 19px 16px 21px 16px;
+    padding: 19px 16px 45px 16px;
   }
 
   .auto-page .top-wrap {
@@ -6750,7 +6831,7 @@ P O P U P
   }
 
   .top-slide-mobile__img {
-    height: 124px;
+    height: 240px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -7301,9 +7382,23 @@ P O P U P
   .auto-card__item--img {
     height: 170px;
   }
+
+  .top-slide-mobile__img {
+    height: 195px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 }
 
 @media screen and (max-width: 414px) {
+  .top-slide-mobile__img {
+    height: 180px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
   .auto-card__item--img {
     height: 135px;
   }
@@ -7314,6 +7409,24 @@ P O P U P
 
   .button-sort:after {
     top: 4px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .top-slide-mobile__img {
+    height: 162px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .top-slide-mobile__img {
+    height: 124px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 }
 /*# sourceMappingURL=maps/main.css.map */

@@ -1623,6 +1623,7 @@ $(document).ready(function () {
     slidesToScroll: 1,
     dots: true,
     arrows: false,
+    swipeToSlide: true,
     variableWidth: true
   }, _defineProperty(_$$slick2, "arrows", true), _defineProperty(_$$slick2, "responsive", [{
     breakpoint: 1751,
@@ -1765,68 +1766,84 @@ $(document).ready(function () {
       $(this).addClass('sort-up-to-down');
     }
   });
-  $(window).on('load resize orientationchange', function () {
-    var width = $(window).width();
+});
+$(window).on('load resize orientationchange', function () {
+  var width = $(window).width();
 
-    if (width > '740') {
-      $('.equipments-tabs a').click(function () {
-        $('.equipments-tabs').find('.active').removeClass('active');
-        $(this).addClass('active');
-        $('.modifications-box').find('.modifications-box__item').hide();
-        $('#' + $(this).data('switch')).show();
-      });
-    }
+  if (width > '740') {
+    $('.equipments-tabs a').click(function () {
+      $('.equipments-tabs').find('.active').removeClass('active');
+      $(this).addClass('active');
+      $('.modifications-box').find('.modifications-box__item').hide();
+      $('#' + $(this).data('switch')).show();
+    });
+  }
 
-    if (width <= '740') {
-      $("div.modifications-box").remove();
-      $('.equipments-tabs a').click(function () {
-        $('.equipments-tabs').find('.active').removeClass('active');
-        $(this).addClass('active');
-        $('.modifications-box__mobile').find('.modifications-box__item-mobile').hide();
-        $('#' + $(this).data('switch')).show();
-      });
-      $('.table-tabs a').click(function () {
-        $(this).parents('.table-tabs').find('.active').removeClass('active');
-        $(this).addClass('active');
-        $(this).parents('.table-tabs').parents('.modifications-box__item-mobile').find('.modifications-table__mobile').hide();
-        $('#' + $(this).data('switch')).show();
-      });
-    }
+  if (width <= '740') {
+    $("div.modifications-box").remove();
+    $('.equipments-tabs a').click(function () {
+      $('.equipments-tabs').find('.active').removeClass('active');
+      $(this).addClass('active');
+      $('.modifications-box__mobile').find('.modifications-box__item-mobile').hide();
+      $('#' + $(this).data('switch')).show();
+    });
+    $('.table-tabs a').click(function () {
+      $(this).parents('.table-tabs').find('.active').removeClass('active');
+      $(this).addClass('active');
+      $(this).parents('.table-tabs').parents('.modifications-box__item-mobile').find('.modifications-table__mobile').hide();
+      $('#' + $(this).data('switch')).show();
+    });
+  }
 
-    if (width < '1000') {
-      $('.header nav li i').click(function () {
-        $(this).parents('li').toggleClass('active-drop');
-      });
-      $('.footer nav li i').click(function () {
-        $(this).parents('li').toggleClass('active-drop');
-      });
-    }
+  if (width < '1000') {
+    $('.header nav li i').click(function () {
+      $(this).parents('li').toggleClass('active-drop');
+    });
+    $('.footer nav li i').click(function () {
+      $(this).parents('li').toggleClass('active-drop');
+    });
+  }
 
-    if (width < '676') {
-      $('.slider-car-big').slick('unslick');
-      $('.slider-car-thumbs').slick('unslick');
-      $('.slider-car-thumbs--mobile .slider-car-thumbs--item--mobile').click(function () {
-        $('.slider-car-thumbs--mobile').find('.active').removeClass('active');
-        $(this).addClass('active');
-        $('.slider-car-big--mobile').find('.slider-car-big--item--mobile').hide();
-        $('#' + $(this).data('switch')).show();
-      });
-    } // if (width > '575' && width < '1750') {
-    //     $(".slider-news").slick('reinit');
-    //     $(".auto-in-stock__slider").slick('reinit');
-    // }
+  if (width < '676') {
+    $('.slider-car-big').slick('unslick');
+    $('.slider-car-thumbs').slick('unslick');
+    $('.slider-car-thumbs--mobile .slider-car-thumbs--item--mobile').click(function () {
+      $('.slider-car-thumbs--mobile').find('.active').removeClass('active');
+      $(this).addClass('active');
+      $('.slider-car-big--mobile').find('.slider-car-big--item--mobile').hide();
+      $('#' + $(this).data('switch')).show();
+    });
+  } // if (width > '575' && width < '1750') {
+  //     $(".slider-news").slick('reinit');
+  //     $(".auto-in-stock__slider").slick('reinit');
+  // }
 
 
-    if (width < '576') {
-      $('.slider-news').slick('unslick');
-      $('.auto-in-stock__slider').slick('unslick');
-      $("div.auto-credit-table").remove();
-      $("div.slider-top").remove();
-      $("div.color-box-desctop").remove();
-      $('.auto-sale-sort').prependTo($(".filter"));
-      $('.auto-run-sort').prependTo($(".filter"));
-    }
-  });
+  if (width < '576') {
+    $('.top-slide-mobile').slick({
+      infinite: true,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      dots: true,
+      adaptiveHeight: true,
+      arrows: false
+    });
+    $('.news-mobile').slick({
+      infinite: true,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      dots: true,
+      adaptiveHeight: true,
+      arrows: false
+    });
+    $('.slider-news').slick('unslick');
+    $('.auto-in-stock__slider').slick('unslick');
+    $("div.auto-credit-table").remove();
+    $("div.slider-top").remove();
+    $("div.color-box-desctop").remove();
+    $('.auto-sale-sort').prependTo($(".filter"));
+    $('.auto-run-sort').prependTo($(".filter"));
+  }
 });
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js")))
 
