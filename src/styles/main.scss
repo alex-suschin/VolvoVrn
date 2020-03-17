@@ -2818,6 +2818,10 @@ P O P U P
     display: none;
 }
 
+.slider-top__item--im-mob {
+    display: none;
+}
+
 
 /*
     M E D I A  
@@ -4159,6 +4163,14 @@ P O P U P
 }
 
 @media screen and (max-width: 575px) {
+    .slider-top__item--im-mob {
+        display: block;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 240px;
+        width: 100%;
+    }
     .news-mobile.slick-initialized .slick-slide {
         display: flex;
     }
@@ -4188,28 +4200,28 @@ P O P U P
     .top-wrap {
         overflow: hidden;
     }
-    .top-slide-mobile.slick-initialized {
-        margin-bottom: 6px;
+    .slider-top.slick-initialized {
+        margin-bottom: -21px;
     }
-    .top-slide-mobile__item {
-        outline: none;
-        width: 100%;
-        max-width: 100%;
-    }
+    // .top-slide-mobile__item {
+    //     outline: none;
+    //     width: 100%;
+    //     max-width: 100%;
+    // }
     .slider-news {
         display: none;
     }
-    .top-slide-mobile .slick-dots {
+    .slider-top .slick-dots {
         bottom: initial;
         text-align: left;
         padding: 0 0 0 12px;
         top: 232px;
     }
-    .top-slide-mobile .slick-dots li {
+    .slider-top .slick-dots li {
         max-width: 36px;
         margin: 0 4px;
     }
-    .top-slide-mobile .slick-dots li button {
+    .slider-top .slick-dots li button {
         height: 1px;
     }
     .slider-news__item-text--mobile {
@@ -4233,11 +4245,11 @@ P O P U P
         line-height: 130%;
         color: #030303;
     }
-    .slider-top {
-        display: none;
-        visibility: hidden;
-        opacity: 0;
-    }
+    // .slider-top {
+    //     display: none;
+    //     visibility: hidden;
+    //     opacity: 0;
+    // }
     .popup .title {
         font-size: 20px;
     }
@@ -4845,9 +4857,9 @@ P O P U P
     .auto-sale__box .auto-card__item {
         width: 100%;
     }
-    .top-slide-mobile {
-        display: block;
-    }
+    // .top-slide-mobile {
+    //     display: block;
+    // }
     .top-slide-mobile__content {
         background-color: #000;
         padding: 19px 16px 21px 16px;
@@ -5072,8 +5084,12 @@ P O P U P
         display: none;
     }
     .slider-top .slider-top__item {
-        display: none;
         min-height: 337px;
+        background: none!important;
+        max-width: 100%;
+        width: 100%;
+        flex-direction: column;
+        padding: 0;
     }
     .slider-top .slider-top__item:first-child {
         display: flex;
@@ -5115,7 +5131,7 @@ P O P U P
     }
     .slider-top__content-wrap {
         justify-content: flex-start;
-        padding: 18px 16px 0 16px;
+        padding: 18px 16px 21px 16px;
         background: #000;
     }
     .btn-def {
@@ -5311,20 +5327,20 @@ P O P U P
     .auto-card__item--img {
         height: 170px;
     }
-    .top-slide-mobile__img {
+    .slider-top__item--im-mob {
         height: 195px;
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
     }
-    .top-slide-mobile .slick-dots {
+    .slider-top .slick-dots {
         bottom: initial;
         top: 186px;
     }
 }
 
 @media screen and (max-width: 414px) {
-    .top-slide-mobile__img {
+    .slider-top__item--im-mob {
         height: 180px;
         background-position: center;
         background-repeat: no-repeat;
@@ -5339,33 +5355,33 @@ P O P U P
     .button-sort:after {
         top: 4px;
     }
-    .top-slide-mobile .slick-dots {
+    .slider-top .slick-dots {
         bottom: initial;
         top: 173px;
     }
 }
 
 @media screen and (max-width: 375px) {
-    .top-slide-mobile__img {
+    .slider-top__item--im-mob {
         height: 162px;
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
     }
-    .top-slide-mobile .slick-dots {
+    .slider-top .slick-dots {
         bottom: initial;
         top: 154px;
     }
 }
 
 @media screen and (max-width: 320px) {
-    .top-slide-mobile__img {
+    .slider-top__item--im-mob {
         height: 124px;
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
     }
-    .top-slide-mobile .slick-dots {
+    .slider-top .slick-dots {
         bottom: initial;
         top: 114px;
     }
