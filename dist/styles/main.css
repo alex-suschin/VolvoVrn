@@ -5995,7 +5995,12 @@ P O P U P
   }
 
   .news-mobile .slick-dots {
-    bottom: -25px;
+    bottom: -6px;
+  }
+
+  .news-mobile .slick-dots li {
+    max-width: 36px;
+    margin: 0 4px;
   }
 
   .news-mobile .slick-dots .slick-active button {
@@ -6004,9 +6009,10 @@ P O P U P
 
   .news-mobile .slick-dots button {
     background: #DEDEDE;
+    height: 1px;
   }
 
-  .top-slide-mobile {
+  .top-slide-mobile.slick-initialized {
     margin-bottom: 6px;
   }
 
@@ -6021,12 +6027,19 @@ P O P U P
   }
 
   .top-slide-mobile .slick-dots {
-    bottom: 15px;
+    bottom: initial;
+    text-align: left;
+    padding: 0 0 0 12px;
+    top: 232px;
   }
 
-  .slick-dots li {
-    max-width: 35px;
-    margin: 0 5px;
+  .top-slide-mobile .slick-dots li {
+    max-width: 36px;
+    margin: 0 4px;
+  }
+
+  .top-slide-mobile .slick-dots li button {
+    height: 1px;
   }
 
   .slider-news__item-text--mobile {
@@ -6823,7 +6836,7 @@ P O P U P
 
   .top-slide-mobile__content {
     background-color: #000;
-    padding: 19px 16px 45px 16px;
+    padding: 19px 16px 21px 16px;
   }
 
   .auto-page .top-wrap {
@@ -7389,6 +7402,11 @@ P O P U P
     background-repeat: no-repeat;
     background-size: cover;
   }
+
+  .top-slide-mobile .slick-dots {
+    bottom: initial;
+    top: 186px;
+  }
 }
 
 @media screen and (max-width: 414px) {
@@ -7410,6 +7428,11 @@ P O P U P
   .button-sort:after {
     top: 4px;
   }
+
+  .top-slide-mobile .slick-dots {
+    bottom: initial;
+    top: 173px;
+  }
 }
 
 @media screen and (max-width: 375px) {
@@ -7419,6 +7442,11 @@ P O P U P
     background-repeat: no-repeat;
     background-size: cover;
   }
+
+  .top-slide-mobile .slick-dots {
+    bottom: initial;
+    top: 154px;
+  }
 }
 
 @media screen and (max-width: 320px) {
@@ -7427,6 +7455,11 @@ P O P U P
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+  }
+
+  .top-slide-mobile .slick-dots {
+    bottom: initial;
+    top: 114px;
   }
 }
 /*# sourceMappingURL=maps/main.css.map */

@@ -1592,13 +1592,7 @@ $(document).ready(function () {
     slidesToShow: 1,
     slidesToScroll: 1,
     dots: true,
-    arrows: false,
-    responsive: [{
-      breakpoint: 576,
-      settings: {
-        settings: "unslick"
-      }
-    }]
+    arrows: false
   });
   $('.slider-news').slick((_$$slick = {
     infinite: true,
@@ -1610,11 +1604,6 @@ $(document).ready(function () {
     breakpoint: 1751,
     settings: {
       infinite: true
-    }
-  }, {
-    breakpoint: 576,
-    settings: {
-      settings: "unslick"
     }
   }]), _$$slick));
   $('.auto-in-stock__slider').slick((_$$slick2 = {
@@ -1632,11 +1621,6 @@ $(document).ready(function () {
       centerMode: true,
       dots: true,
       arrows: false
-    }
-  }, {
-    breakpoint: 576,
-    settings: {
-      settings: "unslick"
     }
   }]), _$$slick2));
   $('.auto-description__slider').slick({
@@ -1767,6 +1751,18 @@ $(document).ready(function () {
     }
   });
 });
+
+function createTopSlider() {
+  $('.top-slide-mobile').slick({
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    dots: true,
+    adaptiveHeight: true,
+    arrows: false
+  });
+}
+
 $(window).on('load resize orientationchange', function () {
   var width = $(window).width();
 
@@ -1820,14 +1816,10 @@ $(window).on('load resize orientationchange', function () {
 
 
   if (width < '576') {
-    $('.top-slide-mobile').slick({
-      infinite: true,
-      slidesToShow: 1,
-      slidesToScroll: 1,
-      dots: true,
-      adaptiveHeight: true,
-      arrows: false
-    });
+    $('.top-slider').slick('unslick');
+    $('.slider-news').slick('unslick');
+    $('.auto-in-stock__slider').slick('unslick');
+    createTopSlider();
     $('.news-mobile').slick({
       infinite: true,
       slidesToShow: 1,
@@ -1836,8 +1828,6 @@ $(window).on('load resize orientationchange', function () {
       adaptiveHeight: true,
       arrows: false
     });
-    $('.slider-news').slick('unslick');
-    $('.auto-in-stock__slider').slick('unslick');
     $("div.auto-credit-table").remove();
     $("div.slider-top").remove();
     $("div.color-box-desctop").remove();

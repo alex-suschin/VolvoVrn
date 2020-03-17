@@ -9,13 +9,7 @@ $(document).ready(function() {
         slidesToShow: 1,
         slidesToScroll: 1,
         dots: true,
-        arrows: false,
-        responsive: [{
-            breakpoint: 576,
-            settings: {
-                settings: "unslick"
-            }
-        }]
+        arrows: false
     });
 
     $('.slider-news').slick({
@@ -28,18 +22,11 @@ $(document).ready(function() {
         swipeToSlide: true,
         arrows: false,
         responsive: [{
-                breakpoint: 1751,
-                settings: {
-                    infinite: true
-                }
-            },
-            {
-                breakpoint: 576,
-                settings: {
-                    settings: "unslick"
-                }
+            breakpoint: 1751,
+            settings: {
+                infinite: true
             }
-        ]
+        }]
     });
 
     $('.auto-in-stock__slider').slick({
@@ -52,21 +39,14 @@ $(document).ready(function() {
         variableWidth: true,
         arrows: true,
         responsive: [{
-                breakpoint: 1751,
-                settings: {
-                    infinite: true,
-                    centerMode: true,
-                    dots: true,
-                    arrows: false,
-                }
-            },
-            {
-                breakpoint: 576,
-                settings: {
-                    settings: "unslick"
-                }
+            breakpoint: 1751,
+            settings: {
+                infinite: true,
+                centerMode: true,
+                dots: true,
+                arrows: false,
             }
-        ]
+        }]
     });
 
     $('.auto-description__slider').slick({
@@ -228,6 +208,17 @@ $(document).ready(function() {
 
 });
 
+function createTopSlider() {
+    $('.top-slide-mobile').slick({
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        dots: true,
+        adaptiveHeight: true,
+        arrows: false
+    });
+}
+
 $(window).on('load resize orientationchange', function() {
     var width = $(window).width();
 
@@ -288,14 +279,14 @@ $(window).on('load resize orientationchange', function() {
     // }
 
     if (width < '576') {
-        $('.top-slide-mobile').slick({
-            infinite: true,
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            dots: true,
-            adaptiveHeight: true,
-            arrows: false
-        });
+
+        $('.top-slider').slick('unslick');
+        $('.slider-news').slick('unslick');
+        $('.auto-in-stock__slider').slick('unslick');
+
+        createTopSlider();
+
+
 
         $('.news-mobile').slick({
             infinite: true,
@@ -307,9 +298,6 @@ $(window).on('load resize orientationchange', function() {
         });
 
 
-
-        $('.slider-news').slick('unslick');
-        $('.auto-in-stock__slider').slick('unslick');
 
         $("div.auto-credit-table").remove();
         $("div.slider-top").remove();
