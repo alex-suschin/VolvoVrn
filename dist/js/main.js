@@ -1821,10 +1821,10 @@ $(document).ready(function () {
         dots: true,
         adaptiveHeight: true,
         arrows: false
-      }); // $("div.auto-credit-table").remove();
-      // $("div.slider-top").remove();
-      // $("div.color-box-desctop").remove();
+      });
+      $("div.auto-credit-table").remove(); // $("div.slider-top").remove();
 
+      $("div.color-box-desctop").remove();
       $('.auto-sale-sort').prependTo($(".filter"));
       $('.auto-run-sort').prependTo($(".filter"));
     }

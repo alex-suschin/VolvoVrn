@@ -291,9 +291,9 @@ $(document).ready(function() {
 
 
 
-            // $("div.auto-credit-table").remove();
+            $("div.auto-credit-table").remove();
             // $("div.slider-top").remove();
-            // $("div.color-box-desctop").remove();
+            $("div.color-box-desctop").remove();
 
             $('.auto-sale-sort').prependTo($(".filter"));
             $('.auto-run-sort').prependTo($(".filter"));
