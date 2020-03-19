@@ -1,0 +1,335 @@
+.equipments .title {
+    margin-bottom: 66px;
+}
+
+.equipments-tabs {
+    padding: 0 397px 0 406px;
+    border-bottom: 1px solid #DADADA;
+    margin-bottom: 63px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.btn-tab {
+    display: block;
+    border-bottom: 4px solid transparent;
+}
+
+.btn-tab:hover {
+    border-color: #1C88D0;
+}
+
+.btn-tab:hover b {
+    color: #1C88D0;
+}
+
+.btn-tab.active {
+    border-color: #1C88D0;
+}
+
+.btn-tab.active b {
+    color: #1C88D0;
+}
+
+.btn-tab b {
+    display: block;
+    font-family: $volvo-font;
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 130%;
+    color: #000;
+    margin-bottom: 20px;
+}
+
+.btn-tab span {
+    display: block;
+    font-family: $volvo-font;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 130%;
+    color: #525252;
+    margin-bottom: 41px;
+}
+
+.container-modif {
+    position: relative;
+    max-width: 1448px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.modifications {
+    margin-bottom: 68px;
+}
+
+.modifications-box__item {}
+
+.modifications-table {
+    display: table;
+    width: 100%;
+}
+
+.modifications-table-tr {
+    display: table-row;
+}
+
+.modifications-table-td {
+    display: table-cell;
+    padding-bottom: 42px;
+}
+
+.modifications-table-td b {
+    display: block;
+    font-family: $volvo-font;
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 130%;
+    color: #000000;
+    margin-bottom: 26px;
+}
+
+.modifications-table-td span {
+    font-family: $volvo-font;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 130%;
+    color: #525252;
+}
+
+.table-th {}
+
+.table-th .modifications-table-td {
+    font-family: $volvo-font;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 130%;
+    color: #525252;
+    padding-bottom: 84px;
+}
+
+.table-th .modifications-table-td:first-child {
+    width: 15.3%;
+}
+
+.table-th .modifications-table-td:nth-child(2) {
+    width: 13.2%;
+}
+
+.table-th .modifications-table-td:nth-child(3) {
+    width: 14.8%;
+}
+
+.table-th .modifications-table-td:nth-child(4) {
+    width: 11.7%;
+}
+
+.table-th .modifications-table-td:nth-child(5) {
+    width: 17.6%;
+}
+
+.table-th .modifications-table-td:nth-child(6) {
+    width: 14.2%;
+}
+
+.modifications .title {
+    margin-bottom: 104px;
+}
+
+.modifications-box__mobile {
+    display: none;
+}
+
+
+/* 
+        M E D I A
+*/
+
+@media screen and (max-width: 1580px) {
+    .equipments-tabs {
+        padding: 0 250px 0 250px;
+    }
+}
+
+@media screen and (max-width: 1500px) {
+    .modifications-table-td b {
+        font-size: 20px;
+    }
+    .modifications-table-td span {
+        font-size: 16px;
+    }
+    .table-th .modifications-table-td {
+        font-size: 16px;
+    }
+    .modifications .title {
+        margin-bottom: 25px;
+    }
+    .table-th .modifications-table-td {
+        padding-bottom: 45px;
+    }
+}
+
+@media screen and (max-width: 1250px) {
+    .equipments-tabs {
+        padding: 0 100px 0 100px;
+    }
+}
+
+@media screen and (max-width: 1130px) {
+    .modifications-table-td b {
+        font-size: 16px;
+    }
+    .table-th .modifications-table-td {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 999px) {
+    .equipments-tabs {
+        padding: 0 50px 0 50px;
+    }
+    .btn-tab b {
+        font-size: 22px;
+    }
+    .btn-tab span {
+        font-size: 18px;
+    }
+    .table-th .modifications-table-td:first-child {
+        width: 9.3%;
+    }
+    .table-th .modifications-table-td:nth-child(2) {
+        width: 15.2%;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .table-th .modifications-table-td:first-child {
+        width: 10.3%;
+    }
+    .modifications-table-td span {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 740px) {
+    .btn-tab b {
+        font-size: 18px;
+    }
+    .btn-tab span {
+        font-size: 15px;
+        margin-bottom: 10px;
+    }
+    .equipments .title {
+        font-size: 32px;
+    }
+    .equipments-tabs {
+        padding: 0 15px 0 15px;
+    }
+    .modifications-box {
+        display: none;
+    }
+    .modifications-box__mobile {
+        display: block;
+    }
+    .modifications-table__mobile {
+        display: table;
+        width: 100%;
+    }
+    .modifications-table__mobile-tr {
+        display: table-row
+    }
+    .modifications-table__mobile-td {
+        display: table-cell;
+        padding-bottom: 42px;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 130%;
+        color: #000000;
+    }
+    .table-tabs {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 52px;
+        padding: 0 8px;
+    }
+    .table-tabs a {
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 130%;
+        text-align: center;
+        text-transform: uppercase;
+        color: #DADADA;
+    }
+    .table-tabs a.active {
+        color: #000;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .modifications-table__mobile {
+        padding: 0 6px 0 6px;
+    }
+    .equipments-tabs {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+        margin-bottom: -3px;
+    }
+    .modifications-table__mobile-td:first-child {
+        width: 54%;
+    }
+    .modifications {
+        margin-bottom: 104px;
+    }
+    .btn-tab {
+        text-align: center;
+        border-bottom: 3px solid transparent;
+        margin-bottom: 29.5px;
+        max-width: 126px;
+        width: 100%;
+    }
+    .equipments .container-modif .title {
+        margin-bottom: 60px;
+    }
+    .btn-tab b {
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 130%;
+        text-align: center;
+        color: #1C88D0;
+        margin-bottom: 11px;
+    }
+    .btn-tab span {
+        font-size: 12px;
+        line-height: 130%;
+        margin-bottom: 12px;
+    }
+    .equipments-tabs {
+        border: none;
+    }
+    .equipments .title {
+        font-size: 16px;
+        line-height: 130%;
+        margin-bottom: 39px;
+        padding: 0 35px;
+    }
+}
+
+@media screen and (max-width: 475px) {
+    .table-tabs a {
+        font-size: 14px;
+        margin: 0 5px;
+    }
+    .table-tabs {
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 475px) {
+    .table-tabs a {
+        font-size: 12px;
+        margin: 0 5px;
+    }
+}
