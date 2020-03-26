@@ -86,21 +86,83 @@
     input:hover,
     input:focus {}
     
-    ul {
+    ul,
+    ol {
         margin: 0;
         padding: 0;
         list-style: none;
+    }
+    
+    ol {
+        counter-reset: myCounter;
     }
     
     ul li {
         padding: 0 0 0 0;
     }
     
-    ul li:before {
+    .news-detail ul,
+    .news-detail ol {
+        margin: 20px 0;
+    }
+    
+    .news-detail ul li {
+        position: relative;
+        padding: 0 0 0 22px;
+        margin-bottom: 12px;
+    }
+    
+    .news-detail ul li:before {
         content: "";
         position: absolute;
-        top: 7px;
+        top: 8px;
         left: 0;
+        display: block;
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background-color: #1C88D0;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+    }
+    
+    ol li {
+        padding: 0 0 0 0;
+        margin-bottom: 12px;
+    }
+    
+    ol li:before {
+        counter-increment: myCounter;
+        content: counter(myCounter) ".";
+        color: #000;
+        display: inline-block;
+        text-align: center;
+        padding: 0 10px 0 0;
+    }
+    
+    table {
+        border-collapse: collapse;
+        width: 100%;
+        border: 2px solid #1C88D0;
+        background: #fbfbfb;
+        margin-bottom: 15px;
+    }
+    
+    table th {
+        font-size: 18px;
+        line-height: 1;
+        padding: 7px;
+        border: 2px solid #1C88D0;
+        font-weight: bold;
+    }
+    
+    table td {
+        font-size: 18px;
+        line-height: 1;
+        padding: 7px;
+        border: 2px solid #1C88D0;
     }
     
     button {
@@ -236,7 +298,7 @@ B U T T O N S
         top: 202px;
         right: 0;
         background-color: #1C88D0;
-        z-index: 5;
+        z-index: 55;
         @include transition(all .2s linear);
         transform: translateX(160px);
         a {
@@ -1749,7 +1811,7 @@ B U T T O N S
         flex-direction: row;
         justify-content: space-between;
         flex-wrap: wrap;
-        padding: 17px 0 30px 0;
+        padding: 17px 0 0 0;
     }
     
     .finance-item__img {
@@ -1784,6 +1846,62 @@ B U T T O N S
     
     .finance-item .btn-blue {
         max-width: 230px;
+    }
+    
+    .page-list {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+    
+    .page-list li {
+        margin-right: 15px;
+        padding: 0 0 0 0;
+        margin-bottom: 0;
+    }
+    
+    .page-list li:before {
+        content: none;
+    }
+    
+    .page-list li:last-child {
+        margin-right: 0;
+    }
+    
+    .page-list a {
+        display: inline-block;
+        background: #FAFAFA;
+        max-width: 34px;
+        height: 34px;
+        font-size: 14px;
+        line-height: 100%;
+        align-items: center;
+        color: #000000;
+        padding: 0 14px 0 14px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    
+    .page-list a:hover {
+        background: #1C88D0;
+        color: #fff;
+    }
+    
+    .page-list li:last-child a {
+        width: auto;
+        max-width: initial;
+    }
+    
+    .page-list li.active a {
+        background: #1C88D0;
+        color: #fff;
+    }
+    
+    .finance-wrap {
+        padding: 0 0 110px 0;
     }
     
     .content-page .top-wrap {
@@ -3382,6 +3500,20 @@ P O P U P
     }
     
     @media screen and (max-width: 575px) {
+        table td,
+        table th {
+            font-size: 14px;
+        }
+        .news-detail ul li,
+        .news-detail ol li {
+            font-size: 15px;
+        }
+        .news-detail ul li:before {
+            top: 6px;
+        }
+        .page-list {
+            padding: 0 16px;
+        }
         .slider-top__item--im-mob {
             display: block;
             background-position: center;
@@ -3837,7 +3969,7 @@ P O P U P
             margin-bottom: 50px;
         }
         .finance-items {
-            padding: 17px 0 60px 0;
+            padding: 17px 0 0 0;
         }
         .finance-page .top-wrap {
             margin-bottom: 18px;
@@ -4469,6 +4601,13 @@ P O P U P
     }
     
     @media screen and (max-width: 475px) {
+        .page-list li:nth-child(4),
+        .page-list li:nth-child(5) {
+            display: none;
+        }
+        .page-list li {
+            margin-right: 12px;
+        }
         .auto-card__item--img {
             height: 170px;
         }
@@ -4507,6 +4646,10 @@ P O P U P
     }
     
     @media screen and (max-width: 375px) {
+        table td,
+        table th {
+            font-size: 12px;
+        }
         .slider-top__item--im-mob {
             height: 162px;
             background-position: center;
